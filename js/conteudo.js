@@ -1,0 +1,35 @@
+// Fonte única de verdade pro índice do site: usado tanto no navegador
+// (renderiza os índices de Teologia/História e a navegação de capítulo)
+// quanto em tools/gerar-placeholders.mjs (gera os rascunhos "em obra").
+// Adicionar um capítulo novo = adicionar uma linha aqui.
+
+export const CAPITULOS = {
+  teologia: [
+    { slug: "via-media", titulo: "A Via Média", resumo: "O que faz o anglicanismo ser, antes de mais nada, anglicano.", pronto: true },
+    { slug: "escritura-tradicao-razao", titulo: "Escritura, Tradição e Razão", resumo: "O tripé de Richard Hooker e como ele sustenta tudo o resto.", pronto: false },
+    { slug: "trinta-nove-artigos", titulo: "Os Trinta e Nove Artigos", resumo: "A confissão de fé que nunca quis ser um catecismo completo.", pronto: false },
+    { slug: "sacramentos", titulo: "Sacramentos: Batismo e Eucaristia", resumo: "Só dois sacramentos maiores — e a razão teológica pra essa contagem enxuta.", pronto: false },
+    { slug: "eclesiologia-episcopado", titulo: "Bispos, Sucessão e a Forma da Igreja", resumo: "Por que o anglicanismo manteve os bispos quando cortou Roma.", pronto: false },
+    { slug: "comunhao-anglicana", titulo: "A Comunhão Anglicana Hoje", resumo: "Como dezenas de províncias ficam em comunhão sem um papa no meio.", pronto: false },
+    { slug: "correntes-internas", titulo: "Anglo-Católicos, Evangélicos e Broad Church", resumo: "As três almas que moram dentro da mesma igreja.", pronto: false },
+    { slug: "anglicanismo-brasil", titulo: "O Anglicanismo no Brasil", resumo: "A IEAB e a história pouco contada da província brasileira.", pronto: false },
+  ],
+  historia: [
+    { slug: "origens-pre-reforma", titulo: "Antes de Henrique: o Cristianismo na Inglaterra", resumo: "Mil anos de igreja inglesa antes do escândalo de 1534.", pronto: false },
+    { slug: "henrique-viii-ruptura", titulo: "1534 — Henrique VIII e a Ruptura com Roma", resumo: "Um divórcio, um Papa irredutível, e um país inteiro mudando de dono.", pronto: true },
+    { slug: "cranmer-bcp-1549", titulo: "Cranmer e o Primeiro Livro de Oração (1549)", resumo: "O homem que traduziu a liturgia inteira pro inglês — e depois pagou por isso.", pronto: false },
+    { slug: "maria-i-reacao-catolica", titulo: "Maria I e os Anos de Fogo", resumo: "Cinco anos que quase desfizeram tudo o que Cranmer construiu.", pronto: false },
+    { slug: "elizabeth-acordo-elisabetano", titulo: "Elizabeth I e o Acordo Elisabetano", resumo: "A solução política que virou identidade religiosa permanente.", pronto: false },
+    { slug: "guerra-civil-puritanos", titulo: "Guerra Civil, Cromwell e os Puritanos", resumo: "A década em que a Igreja da Inglaterra deixou de existir oficialmente.", pronto: false },
+    { slug: "bcp-1662", titulo: "1662 — o Livro que Uniu (e Dividiu) a Igreja", resumo: "A Restauração e o prayer book que sobrevive, quase intacto, até hoje.", pronto: true },
+    { slug: "expansao-colonial", titulo: "Impérios e Missões: o Anglicanismo Sai da Inglaterra", resumo: "Como uma igreja de estado nacional virou uma comunhão global.", pronto: false },
+    { slug: "movimento-oxford", titulo: "O Movimento de Oxford", resumo: "Newman, Keble, Pusey e a reinvenção católica do século XIX.", pronto: false },
+    { slug: "seculo-xx-xxi", titulo: "Mulheres, Cismas e o Anglicanismo Contemporâneo", resumo: "Ordenação feminina, GAFCON e as fraturas do século XX ao XXI.", pronto: false },
+    { slug: "ieab-brasil-historia", titulo: "A História da IEAB", resumo: "De missão episcopal norte-americana a província autônoma brasileira.", pronto: false },
+  ],
+};
+
+export const NOMES_SECAO = {
+  teologia: { titulo: "Teologia", artigo: "a" },
+  historia: { titulo: "História", artigo: "a" },
+};
