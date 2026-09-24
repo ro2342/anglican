@@ -20,6 +20,7 @@ const SHELL = [
   "teologia/via-media.html",
   "teologia/escritura-tradicao-razao.html",
   "teologia/trinta-nove-artigos.html",
+  "teologia/sacramentos.html",
   "historia/henrique-viii-ruptura.html",
   "historia/bcp-1662.html",
 ];

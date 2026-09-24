@@ -3,6 +3,33 @@
 Narrativa completa de cada entrega. Índice curto (o que muda mais rápido de
 consultar) fica em `PROGRESS.md`, na raiz.
 
+## 2026-09-25-3 — Sacramentos
+
+Terceira entrega da mesma sessão de aprofundamento doutrinário. O capítulo dos
+39 Artigos já tinha explicado a lógica confessional por trás de "só dois
+sacramentos do Evangelho"; este capítulo foca no que acontece na prática, com
+um eixo narrativo central: o caso Gorham (1847-1850).
+
+George Cornelius Gorham, clérigo evangélico, teve sua nomeação para uma
+paróquia bloqueada pelo bispo de Exeter por negar regeneração batismal
+incondicional. O caso foi da Corte de Arcos (eclesiástica, decidiu contra
+Gorham) até o Comitê Judicial do Conselho Privado — um tribunal *civil* — que
+em 1850 decidiu a favor de Gorham, considerando sua doutrina dentro dos
+limites permitidos pela Igreja da Inglaterra. A reação foi desproporcional ao
+conteúdo técnico da disputa: para a ala anglo-católica, o problema não era só
+a doutrina em si, mas o fato de um tribunal secular ter autoridade final para
+decidir questão de fé — Henry Edward Manning, futuro cardeal, converteu-se a
+Roma citando explicitamente esse caso como ponto de ruptura de confiança.
+
+Capítulo também cobre a prática histórica de comunhão trimestral (não
+semanal) até o Movimento de Oxford revitalizar a frequência eucarística no
+século XIX — detalhe que contraria a imagem popular de uma tradição sempre
+centrada na Eucaristia semanal.
+
+`js/conteudo.js`: `sacramentos` passou para `pronto: true`. `sw.js`
+atualizado com o novo capítulo no shell pré-cacheado. Teologia: 4 de 8
+capítulos prontos.
+
 ## 2026-09-25-2 — Dois capítulos doutrinários
 
 Depois de ver o site no ar, o usuário pediu explicitamente mais peso teológico:

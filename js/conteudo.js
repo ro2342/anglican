@@ -8,7 +8,7 @@ export const CAPITULOS = {
     { slug: "via-media", titulo: "A Via Média", resumo: "O que faz o anglicanismo ser, antes de mais nada, anglicano.", pronto: true },
     { slug: "escritura-tradicao-razao", titulo: "Escritura, Tradição e Razão", resumo: "O tripé de Richard Hooker, na prática — não na teoria.", pronto: true },
     { slug: "trinta-nove-artigos", titulo: "Os Trinta e Nove Artigos", resumo: "A confissão de fé que nunca quis ser um catecismo completo — artigo por artigo, sem pular os desconfortáveis.", pronto: true },
-    { slug: "sacramentos", titulo: "Sacramentos: Batismo e Eucaristia", resumo: "Só dois sacramentos maiores — e a razão teológica pra essa contagem enxuta.", pronto: false },
+    { slug: "sacramentos", titulo: "Sacramentos: Batismo e Eucaristia", resumo: "Só dois sacramentos maiores — e o caso de 1850 que foi parar num tribunal civil por causa deles.", pronto: true },
     { slug: "eclesiologia-episcopado", titulo: "Bispos, Sucessão e a Forma da Igreja", resumo: "Por que o anglicanismo manteve os bispos quando cortou Roma.", pronto: false },
     { slug: "comunhao-anglicana", titulo: "A Comunhão Anglicana Hoje", resumo: "Como dezenas de províncias ficam em comunhão sem um papa no meio.", pronto: false },
     { slug: "correntes-internas", titulo: "Anglo-Católicos, Evangélicos e Broad Church", resumo: "As três almas que moram dentro da mesma igreja.", pronto: false },
