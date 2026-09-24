@@ -18,6 +18,8 @@ const SHELL = [
   "assets/icons/maskable-192.png",
   "assets/icons/maskable-512.png",
   "teologia/via-media.html",
+  "teologia/escritura-tradicao-razao.html",
+  "teologia/trinta-nove-artigos.html",
   "historia/henrique-viii-ruptura.html",
   "historia/bcp-1662.html",
 ];

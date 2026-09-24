@@ -3,6 +3,52 @@
 Narrativa completa de cada entrega. Índice curto (o que muda mais rápido de
 consultar) fica em `PROGRESS.md`, na raiz.
 
+## 2026-09-25-2 — Dois capítulos doutrinários
+
+Depois de ver o site no ar, o usuário pediu explicitamente mais peso teológico:
+"um estudo mesmo com base na fé do anglicanismo... tipo um estudo fodido de
+teologia anglicana". Os 3 capítulos da entrega anterior eram, na prática, mais
+sobre *como a igreja chegou a existir* (história institucional, o termo via
+media, o processo de revisão do BCP) do que sobre *no que ela crê de fato*. Este
+pedido corrigiu isso, indo direto para o conteúdo doutrinário do índice de
+Teologia.
+
+**Escritura, Tradição e Razão** deixou de ser só uma explicação do modelo de
+Hooker (já coberta de raspão no capítulo da Via Média) e virou uma análise de
+como esse tripé decide — ou falha em decidir sozinho — debates reais e não
+resolvidos da Comunhão Anglicana hoje, usando a ordenação de mulheres bispas
+como estudo de caso de como os três lados do tripé podem ser usados
+legitimamente por lados opostos da mesma disputa.
+
+**Os Trinta e Nove Artigos** é o capítulo mais denso do site até agora:
+percorre os 39 artigos de 1571 por blocos temáticos, com citação direta
+(textual, domínio público) das passagens mais definidoras — a fórmula de
+justificação só pela fé do Artigo XI, o alerta pastoral contra especulação
+sobre predestinação do Artigo XVII, a rejeição explícita da transubstanciação
+por nome no Artigo XXVIII ("repugnant to the plain words of Scripture"), a
+distinção entre os dois "Sacramentos do Evangelho" e os outros cinco
+comumente chamados sacramentos. Inclui deliberadamente o Artigo XVIII
+(exclusividade de Cristo para a salvação) sem suavizar o texto — decisão
+consciente de não editar uma fonte primária pra parecer mais confortável a
+uma sensibilidade contemporânea. Também documenta o status atual do
+documento: não é mais juramento obrigatório de clero desde o Clerical
+Subscription Act de 1865; hoje é "formulário histórico" pelo Cânon A5 da
+Igreja da Inglaterra.
+
+`js/conteudo.js` atualizado: os dois capítulos passaram de `pronto: false`
+para `pronto: true`, o que propaga sozinho pro índice de Teologia, pra
+barra de progresso e pro service worker (`sw.js` — os dois arquivos entraram
+na lista `SHELL` pré-cacheada). Teologia está em 3 de 8 capítulos prontos.
+
+**Bug pequeno pego antes do commit**: um caractere cirílico (`о`, U+043E)
+entrou por engano no meio de uma palavra em português durante a escrita do
+capítulo dos Artigos — visualmente idêntico ao `o` latino, então invisível
+em qualquer revisão visual do texto renderizado. Pego só porque a rotina de
+teste incluiu uma varredura por caracteres fora do intervalo Latin-1
+(`grep` com range Unicode) antes do commit. Vale manter esse hábito em
+capítulos futuros — esse tipo de erro não aparece em screenshot nem em
+leitura corrida.
+
 ## 2026-09-25 — Criação do site
 
 ### Contexto
