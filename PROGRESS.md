@@ -5,9 +5,15 @@
 
 ## Próximos passos
 
-- [ ] Escrever os 17 capítulos/documentos ainda em "em obra" (4 de Teologia, 9
-      de História, 4 de Biblioteca — ver `js/conteudo.js` pra lista com
-      `pronto: false`). Sem ordem obrigatória; seguir curiosidade da sessão.
+- [ ] **Esqueleto de conteúdo está 100% completo** — Teologia (8/8), História
+      (11/11) e Biblioteca (5/5) não têm mais nenhum "em obra". Próximo passo
+      de conteúdo, se houver, é expandir o índice em si (novos capítulos) ou
+      revisar/aprofundar algum já escrito — não preencher lacunas.
+- [ ] Revisão de leitura humana: os últimos ~17 capítulos foram escritos por
+      agentes em paralelo (forks) a partir de briefings detalhados do
+      coordenador; o coordenador conferiu estrutura, unicode e renderização,
+      mas não fez uma leitura crítica linha a linha de cada um. Vale uma
+      passada de revisão de conteúdo/precisão histórica com calma.
 - [ ] Testar instalação do PWA de verdade num celular (Android/iOS) — só foi
       testado em desktop/local até agora.
 - [ ] Considerar favicon/ícone em variação SVG pra telas de alta densidade, se o
@@ -47,3 +53,11 @@
   Catecismo). Corrigido bug no gerador de placeholders que rotulava tudo
   fora de Teologia como "História".
   Detalhe completo → `ai/CHANGELOG.md#2026-09-25-4`.
+- **2026-09-25 (5)** — Todo o esqueleto de conteúdo restante escrito numa
+  única leva: os 4 capítulos que faltavam em Teologia, os 9 de História e os
+  4 documentos da Biblioteca — 17 textos, ~30 mil palavras, via agentes fork
+  paralelos coordenados a partir de briefings de conteúdo específicos
+  (eventos reais, datas, fontes primárias, sem duplicar o que outros
+  capítulos já cobriam). Teologia 8/8, História 11/11, Biblioteca 5/5 —
+  esqueleto de conteúdo do site 100% completo, nenhum "em obra" restante.
+  Detalhe completo → `ai/CHANGELOG.md#2026-09-25-5`.
