@@ -3,6 +3,69 @@
 Narrativa completa de cada entrega. Índice curto (o que muda mais rápido de
 consultar) fica em `PROGRESS.md`, na raiz.
 
+## 2026-09-25-6 — Nova seção Questões: teologia temática, não histórica
+
+Logo depois da entrega anterior (esqueleto de conteúdo 100% completo), o
+usuário compartilhou contexto pessoal substancial: é gay, não-binário, de
+esquerda politicamente, e passou por uma trajetória religiosa real — evangélico
+brasileiro, depois IEAB (Paróquia de Todos os Santos, em Santos), depois
+umbanda, depois a tradição de bruxaria Reclaiming, e hoje sem filiação fixa,
+mas também não ateu. Pediu conteúdo teológico sobre "as questões mais comuns
+do cristianismo", especificamente pensando em alguém não-cristão que talvez
+queira se aproximar.
+
+Antes de escrever, perguntado ao usuário (via AskUserQuestion, não assumido):
+(1) se isso deveria virar seção nova no menu ou mais capítulos dentro de
+Teologia, e (2) quais temas priorizar. Resposta: seção nova, chamada
+"Questões" — e todos os 4 temas oferecidos foram escolhidos: LGBTQIA+, fé
+sem certeza, outras religiões, teologia da libertação.
+
+**Decisão consciente de não usar fork aqui**: diferente da leva anterior de
+17 textos, esses 4 foram escritos diretamente pelo coordenador. Motivo:
+são os textos mais pessoais e potencialmente sensíveis do site até agora —
+sexualidade e religião, exclusivismo religioso aplicado à própria trajetória
+espiritual do usuário (umbanda, bruxaria) — e exigem controle direto de tom,
+equilíbrio entre os lados de disputas reais, e precisão sobre fatos concretos
+(leis civis, datas de ordenação, nomes de teólogos) sem risco de um fork
+deslizar pra advocacy unilateral ou pra um "os dois lados" artificialmente
+neutro demais.
+
+Conteúdo de cada capítulo, resumido:
+
+- **Anglicanismo e Pessoas LGBTQIA+**: os dois argumentos completos (tradicionalista
+  e afirmador) usando o mesmo tripé de Escritura/Tradição/Razão já descrito em
+  outro capítulo, com dados concretos por província (TEC e Igreja Escocesa com
+  casamento igualitário pleno; Igreja da Inglaterra com bênçãos desde 2023, não
+  casamento; IEAB historicamente mais inclusiva, com ressalva de checar posição
+  vigente) — e, sem suavizar, a Lei Anti-Homossexualidade de Uganda (2023, pena
+  de morte para "homossexualidade agravada") com apoio de clero ligado ao
+  GAFCON, pra não apresentar a disputa como puramente abstrata/acadêmica.
+- **Fé sem Certeza**: ancorado em Tennyson ("In Memoriam A.H.H.", 1850, "There
+  lives more faith in honest doubt..."), o Artigo VI como "mínimo doutrinário"
+  estruturalmente pequeno, o catecumenato anglicano real como processo sem
+  pressão de conversão, e teologia apofática (via *The Cloud of Unknowing*).
+  Fecha falando diretamente com alguém que já passou por várias tradições —
+  sem pedir renúncia formal do passado espiritual como pré-requisito de entrada.
+- **Outras Religiões, Outros Caminhos**: o Artigo XVIII (já na Biblioteca)
+  citado sem suavizar, contraposto à demissão de F.D. Maurice do King's College
+  em 1853 por dúvidas sobre punição eterna, e ao relatório oficial da Comissão
+  de Doutrina da Igreja da Inglaterra ("The Mystery of Salvation", 1995) que
+  recuou da leitura exclusivista estrita. Honesto sobre não haver doutrina
+  anglicana específica pra umbanda ou bruxaria contemporânea — a tradição nunca
+  desenvolveu isso, qualquer resposta é extensão, não citação de algo pronto.
+- **Teologia da Libertação e a Esquerda Anglicana**: Desmond Tutu e o Prêmio
+  Nobel de 1984 como argumento teológico (*imago Dei*, *ubuntu*) não político,
+  o Magnificat como prova de que a leitura profética já está dentro da própria
+  liturgia do BCP desde 1549 (não é importação moderna), e uma ressalva honesta
+  no fechamento: o mapa não é "Norte conservador x Sul progressista" — muitas
+  províncias do GAFCON combinam conservadorismo sobre sexualidade com retórica
+  anticolonial forte, os eixos de disputa não são todos paralelos.
+
+`js/conteudo.js`: nova chave `questoes` em `CAPITULOS` e `NOMES_SECAO`, mesma
+mecânica de índice/progresso reaproveitada sem duplicar lógica. `js/app.js`:
+link "Questões" adicionado à nav, entre História e Biblioteca. `sw.js`:
+shell atualizado com as 5 páginas novas.
+
 ## 2026-09-25-5 — Todo o esqueleto de conteúdo, numa leva só
 
 Pedido do usuário, direto: "faça agora todos os textos que vc conseguir,

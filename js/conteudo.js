@@ -27,6 +27,12 @@ export const CAPITULOS = {
     { slug: "seculo-xx-xxi", titulo: "Mulheres, Cismas e o Anglicanismo Contemporâneo", resumo: "Ordenação feminina, GAFCON e as fraturas do século XX ao XXI.", pronto: true },
     { slug: "ieab-brasil-historia", titulo: "A História da IEAB", resumo: "De missão episcopal norte-americana a província autônoma brasileira.", pronto: true },
   ],
+  questoes: [
+    { slug: "lgbtqia", titulo: "Anglicanismo e Pessoas LGBTQIA+", resumo: "Os dois lados do argumento, de dentro da própria tradição — e onde cada província está hoje.", pronto: true },
+    { slug: "fe-sem-certeza", titulo: "Fé sem Certeza", resumo: "O espaço anglicano pra dúvida, ceticismo e gente ainda decidindo o que acredita.", pronto: true },
+    { slug: "outras-religioes", titulo: "Outras Religiões, Outros Caminhos", resumo: "O Artigo XVIII diz que só há salvação pelo nome de Cristo. Nem todo anglicano concorda — inclusive por dentro da própria igreja.", pronto: true },
+    { slug: "teologia-libertacao", titulo: "Teologia da Libertação e a Esquerda Anglicana", resumo: "De onde vem o lado progressista da tradição — não é só posição política, é argumento teológico.", pronto: true },
+  ],
   biblioteca: [
     { slug: "trinta-nove-artigos", titulo: "Os Trinta e Nove Artigos de Religião", resumo: "Texto integral, bilíngue: o original inglês de 1662 e a tradução da IEAB (Livro de Oração Comum, 1950).", pronto: true },
     { slug: "credo-niceno", titulo: "O Credo Niceno", resumo: "O credo conciliar de 325/381, usado na Eucaristia dominical.", pronto: true },
@@ -39,5 +45,6 @@ export const CAPITULOS = {
 export const NOMES_SECAO = {
   teologia: { titulo: "Teologia", artigo: "a" },
   historia: { titulo: "História", artigo: "a" },
+  questoes: { titulo: "Questões", artigo: "a" },
   biblioteca: { titulo: "Biblioteca", artigo: "a" },
 };

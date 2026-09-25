@@ -5,10 +5,15 @@
 
 ## Próximos passos
 
-- [ ] **Esqueleto de conteúdo está 100% completo** — Teologia (8/8), História
-      (11/11) e Biblioteca (5/5) não têm mais nenhum "em obra". Próximo passo
-      de conteúdo, se houver, é expandir o índice em si (novos capítulos) ou
-      revisar/aprofundar algum já escrito — não preencher lacunas.
+- [ ] **Esqueleto de conteúdo está 100% completo** em todas as 4 seções —
+      Teologia (8/8), História (11/11), Questões (4/4) e Biblioteca (5/5).
+      Próximo passo de conteúdo, se houver, é expandir os índices em si
+      (novos capítulos/temas) ou revisar/aprofundar algum já escrito — não
+      preencher lacunas.
+- [ ] Seção Questões tem só 4 temas; o usuário mencionou trajetória pessoal
+      rica (evangélico → IEAB Santos → umbanda → Reclaiming) que pode gerar
+      mais temas pra essa seção no futuro — perguntar antes de expandir por
+      conta própria, já que são textos sensíveis/pessoais.
 - [ ] Revisão de leitura humana: os últimos ~17 capítulos foram escritos por
       agentes em paralelo (forks) a partir de briefings detalhados do
       coordenador; o coordenador conferiu estrutura, unicode e renderização,
@@ -61,3 +66,13 @@
   capítulos já cobriam). Teologia 8/8, História 11/11, Biblioteca 5/5 —
   esqueleto de conteúdo do site 100% completo, nenhum "em obra" restante.
   Detalhe completo → `ai/CHANGELOG.md#2026-09-25-5`.
+- **2026-09-25 (6)** — Nova seção **Questões** no menu (entre História e
+  Biblioteca): teologia temática/pastoral, não histórica — pra quem está
+  chegando de fora com perguntas específicas, não querendo cronologia.
+  Pedido explícito do usuário, que compartilhou trajetória pessoal (gay,
+  não-binário, ex-evangélico, passou pela IEAB em Santos, depois umbanda,
+  depois Reclaiming). 4 capítulos, escritos diretamente pelo coordenador
+  (não via fork, dado o tema sensível): Anglicanismo e Pessoas LGBTQIA+,
+  Fé sem Certeza, Outras Religiões/Outros Caminhos, e Teologia da
+  Libertação e a Esquerda Anglicana. Site agora com 4 seções completas.
+  Detalhe completo → `ai/CHANGELOG.md#2026-09-25-6`.
