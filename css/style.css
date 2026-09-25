@@ -207,6 +207,74 @@ hr.ornamento {
   background: linear-gradient(to right, transparent, var(--borda), transparent);
 }
 
+/* ---------- biblioteca: documentos bilíngues ---------- */
+
+.bloco-artigo {
+  margin: 2.6rem 0;
+  padding-top: .4rem;
+  border-top: 1px solid var(--borda);
+}
+.bloco-artigo h3 {
+  margin-top: 1.2rem;
+}
+
+.rotulo-idioma {
+  display: block;
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  font-size: .68rem;
+  font-weight: 600;
+  color: var(--tinta-suave);
+  margin-bottom: .35rem;
+}
+
+.texto-original {
+  font-style: italic;
+  color: var(--tinta-suave);
+  border-left: 2px solid var(--ouro);
+  padding-left: 1rem;
+  margin: 0 0 1.1rem;
+}
+.texto-original .rotulo-idioma { color: var(--ouro); }
+
+.traducao {
+  border-left: 2px solid var(--rubrica);
+  padding-left: 1rem;
+  margin: 0 0 .6rem;
+}
+
+.nota-editorial {
+  font-family: var(--sans);
+  font-size: .86rem;
+  color: var(--tinta-suave);
+  background: var(--papel-alt);
+  border: 1px solid var(--borda);
+  border-radius: var(--radius);
+  padding: .8rem 1rem;
+  margin: 0 0 1.1rem;
+}
+.nota-editorial strong { color: var(--tinta); }
+
+.mini-indice {
+  font-family: var(--sans);
+  font-size: .82rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem .7rem;
+  margin: 1.6rem 0 2.4rem;
+  padding: 1rem 1.1rem;
+  background: var(--papel-alt);
+  border: 1px solid var(--borda);
+  border-radius: var(--radius);
+}
+.mini-indice a {
+  color: var(--tinta-suave);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.mini-indice a:hover { color: var(--rubrica); }
+
 /* ---------- listas de índice (teologia/história) ---------- */
 
 .indice-secao {

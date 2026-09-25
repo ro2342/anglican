@@ -5,9 +5,9 @@
 
 ## Próximos passos
 
-- [ ] Escrever os 13 capítulos ainda em "em obra" (4 de Teologia, 9 de História —
-      ver `js/conteudo.js` pra lista com `pronto: false`). Sem ordem obrigatória;
-      seguir curiosidade da sessão.
+- [ ] Escrever os 17 capítulos/documentos ainda em "em obra" (4 de Teologia, 9
+      de História, 4 de Biblioteca — ver `js/conteudo.js` pra lista com
+      `pronto: false`). Sem ordem obrigatória; seguir curiosidade da sessão.
 - [ ] Testar instalação do PWA de verdade num celular (Android/iOS) — só foi
       testado em desktop/local até agora.
 - [ ] Considerar favicon/ícone em variação SVG pra telas de alta densidade, se o
@@ -36,3 +36,14 @@
   batismal, disparando uma onda de conversões de clérigos anglo-católicos
   para Roma. Teologia: 4 de 8 capítulos prontos.
   Detalhe completo → `ai/CHANGELOG.md#2026-09-25-3`.
+- **2026-09-25 (4)** — Nova seção **Biblioteca** no menu: textos primários na
+  íntegra, não só citados de passagem nos capítulos. Primeiro documento: os
+  39 Artigos completos, bilíngues (original inglês de 1662, extraído do PDF
+  já salvo em Fontes, + a tradução histórica da própria Igreja Episcopal do
+  Brasil, do Livro de Oração Comum de 1950), com notas explicando onde a
+  versão brasileira diverge do original inglês (Artigo XXI omitido, XXXVI e
+  XXXVII reescritos pra uma república sem coroa). Esqueleto da Biblioteca
+  criado com mais 4 documentos "em obra" (os 3 credos históricos + o
+  Catecismo). Corrigido bug no gerador de placeholders que rotulava tudo
+  fora de Teologia como "História".
+  Detalhe completo → `ai/CHANGELOG.md#2026-09-25-4`.

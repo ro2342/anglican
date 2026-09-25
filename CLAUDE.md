@@ -125,3 +125,11 @@ Paleta e tipografia vivem como CSS custom properties no topo de `css/style.css`.
 - Fontes primárias (PDF/epub/txt usados como base de pesquisa) ficam em
   `fontes/downloads/` e são linkadas na página `fontes/index.html` — todas de
   domínio público até agora; checar isso antes de adicionar uma fonte nova.
+- A seção **Biblioteca** (`biblioteca/`) é diferente de Fontes: não são
+  arquivos pra baixar, é o texto primário completo, lido direto na página
+  (ex.: os 39 Artigos inteiros, bilíngues). Quando o texto original já existir
+  em algum arquivo de `fontes/downloads/`, extrair de lá em vez de recitar de
+  memória — documento jurídico/confessional pede precisão, não paráfrase. Se
+  existir tradução histórica já publicada (de uma província anglicana de
+  língua portuguesa, por exemplo), preferir citá-la com atribuição a
+  inventar uma tradução nova do zero.

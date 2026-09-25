@@ -4,7 +4,7 @@
 //
 // Uso: node tools/gerar-placeholders.mjs
 
-import { CAPITULOS } from "../js/conteudo.js";
+import { CAPITULOS, NOMES_SECAO } from "../js/conteudo.js";
 import { writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 
@@ -32,11 +32,11 @@ const gabarito = (secao, titulo, resumo) => `<!doctype html>
 <header class="topo" id="topo"></header>
 
 <main>
-  <span class="rubrica-label">${secao === "teologia" ? "Teologia" : "História"}</span>
+  <span class="rubrica-label">${NOMES_SECAO[secao].titulo}</span>
   <h1>${titulo}</h1>
   <p class="subtitulo">${resumo}</p>
 
-  <p class="em-obra"><strong>Este capítulo ainda não foi escrito.</strong> Ele já está no índice porque faz parte do
+  <p class="em-obra"><strong>Este texto ainda não foi preparado.</strong> Ele já está no índice porque faz parte do
   mapa completo do estudo — a ideia é preencher os espaços aos poucos, sem fingir que o quadro geral não existe
   enquanto isso não acontece. Volte outra hora.</p>
 

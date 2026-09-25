@@ -36,6 +36,7 @@ function montarTopo() {
       <nav class="nav-principal">
         <a href="${base}teologia/index.html"${ativo("/teologia/")}>Teologia</a>
         <a href="${base}historia/index.html"${ativo("/historia/")}>História</a>
+        <a href="${base}biblioteca/index.html"${ativo("/biblioteca/")}>Biblioteca</a>
         <a href="${base}fontes/index.html"${ativo("/fontes/")}>Fontes</a>
       </nav>
       <button class="botao-tema" id="botao-tema" type="button">modo escuro</button>

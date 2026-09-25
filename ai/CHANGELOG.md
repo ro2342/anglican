@@ -3,6 +3,62 @@
 Narrativa completa de cada entrega. Índice curto (o que muda mais rápido de
 consultar) fica em `PROGRESS.md`, na raiz.
 
+## 2026-09-25-4 — Seção Biblioteca: os 39 Artigos na íntegra
+
+O usuário apontou o problema real: os capítulos de Teologia citam e comentam
+os 39 Artigos extensivamente, mas em nenhum lugar do site dava pra ler o
+documento inteiro. Pediu uma seção "Biblioteca" no menu.
+
+Enquanto eu montava a extração do texto em inglês (encontrado no próprio PDF
+`the-book-of-common-prayer-1662.pdf` já salvo em `fontes/downloads/` — um
+fac-símile da edição Baskerville de 1762, páginas 331-338, que precisou de
+`pypdf` pra extrair e limpeza manual de ligaduras tipográficas arcaicas como
+"ſ" e "ﬅ"), o usuário mandou um link
+(monergismo.com/textos/credos/39artigos.htm) perguntando se tinha uma
+tradução em português ali. Baixei o HTML bruto (havia sido perdido texto na
+primeira tentativa via WebFetch, que resume/perde conteúdo em páginas
+longas — baixar com `curl` e limpar o HTML manualmente com Python preservou
+o texto completo). A página era **muito melhor do que uma tradução
+genérica**: é a transcrição da tradução oficial usada pela própria Igreja
+Episcopal do Brasil, extraída do *Livro de Oração Comum* de 1950 (p.
+601-611) — ou seja, o texto que anglicanos brasileiros de fato liam.
+
+Isso mudou o formato da página: em vez de eu traduzir os 39 Artigos do zero
+(arriscando imprecisão num documento jurídico-confessional), cada artigo
+ficou bilíngue de verdade — o inglês de 1662 (fonte primária local) ao lado
+da tradução histórica da IEAB (fonte primária brasileira) — com atribuição
+explícita das duas origens no rodapé da página.
+
+Comparar as duas versões revelou divergências que viraram notas editoriais
+diretamente no texto, em vez de ficarem escondidas:
+- **Artigo VIII** (Dos Credos): a versão brasileira cita só dois credos
+  (Niceno e Apostólico); o original de 1662 cita três, incluindo o
+  Atanasiano — que a IEAB simplesmente não herdou.
+- **Artigo XXI** (Autoridade dos Concílios Gerais): omitido por completo na
+  versão americana/brasileira, por tratar de "assunto de caráter local e
+  civil" (a referência a "príncipes" convocando concílios). Texto original
+  de 1571 preservado via nota de rodapé da própria fonte.
+- **Artigo XXXVI**: troca a ancoragem de validade de ordenação do "tempo de
+  Eduardo VI" (Inglaterra) pela Convenção Geral de 1792 (Igreja Episcopal
+  americana) — mesmo princípio, fonte de referência trocada.
+- **Artigo XXXVII** (Magistrados Civis): reescrita quase completa — o
+  original é sobre a Supremacia Real inglesa; numa república sem coroa, o
+  artigo inteiro foi substituído por um princípio genérico de obediência
+  civil.
+
+`js/conteudo.js`: nova chave `biblioteca` em `CAPITULOS` e `NOMES_SECAO`
+(mesma mecânica de índice/progresso/navegação das outras seções, reutilizada
+sem duplicar lógica). `js/app.js`: link "Biblioteca" adicionado à nav
+principal. `css/style.css`: classes novas (`.texto-original`,  `.traducao`,
+`.rotulo-idioma`, `.nota-editorial`, `.mini-indice`) pro layout bilíngue.
+`sw.js` atualizado com as duas páginas novas no shell pré-cacheado.
+
+**Bug achado e corrigido**: `tools/gerar-placeholders.mjs` tinha o rótulo de
+seção hard-coded como `secao === "teologia" ? "Teologia" : "História"` — ao
+gerar os 4 placeholders da Biblioteca (credos, catecismo), todos saíram
+rotulados "História" por engano. Corrigido pra usar `NOMES_SECAO[secao]`,
+a mesma fonte de verdade que todo o resto do site já usa.
+
 ## 2026-09-25-3 — Sacramentos
 
 Terceira entrega da mesma sessão de aprofundamento doutrinário. O capítulo dos

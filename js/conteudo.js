@@ -27,9 +27,17 @@ export const CAPITULOS = {
     { slug: "seculo-xx-xxi", titulo: "Mulheres, Cismas e o Anglicanismo Contemporâneo", resumo: "Ordenação feminina, GAFCON e as fraturas do século XX ao XXI.", pronto: false },
     { slug: "ieab-brasil-historia", titulo: "A História da IEAB", resumo: "De missão episcopal norte-americana a província autônoma brasileira.", pronto: false },
   ],
+  biblioteca: [
+    { slug: "trinta-nove-artigos", titulo: "Os Trinta e Nove Artigos de Religião", resumo: "Texto integral, bilíngue: o original inglês de 1662 e a tradução da IEAB (Livro de Oração Comum, 1950).", pronto: true },
+    { slug: "credo-niceno", titulo: "O Credo Niceno", resumo: "O credo conciliar de 325/381, usado na Eucaristia dominical.", pronto: false },
+    { slug: "credo-apostolico", titulo: "O Credo dos Apóstolos", resumo: "O credo batismal mais antigo, usado no Ofício Diário.", pronto: false },
+    { slug: "credo-atanasiano", titulo: "O Credo Atanasiano", resumo: "O credo mais longo e mais duro dos três — e o único que a IEAB não herdou.", pronto: false },
+    { slug: "catecismo", titulo: "O Catecismo", resumo: "Perguntas e respostas do Livro de Oração Comum, incluindo a definição de sacramento.", pronto: false },
+  ],
 };
 
 export const NOMES_SECAO = {
   teologia: { titulo: "Teologia", artigo: "a" },
   historia: { titulo: "História", artigo: "a" },
+  biblioteca: { titulo: "Biblioteca", artigo: "a" },
 };

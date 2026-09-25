@@ -9,6 +9,8 @@ const SHELL = [
   "teologia/index.html",
   "historia/index.html",
   "fontes/index.html",
+  "biblioteca/index.html",
+  "biblioteca/trinta-nove-artigos.html",
   "css/style.css",
   "js/app.js",
   "js/conteudo.js",
